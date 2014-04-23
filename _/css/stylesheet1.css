@@ -1,0 +1,9 @@
+body {
+	background-color: #fff;	
+}
+.nav {
+	text-decoration: underline;
+	font-size: 30px;
+	padding-left: 50px;
+	display: inline-block;
+}
