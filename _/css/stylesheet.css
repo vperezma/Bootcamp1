@@ -1,100 +1,204 @@
-body, div, h1, h2, h3, h4, p, ul, img, aside{
-	margin:0;
-	padding:0;
-	/*resets css so takes off html styles*/
+html, body, div, p, span, h1, h2, h3, h4, img, section, aside, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 body {
-	font-family: Arial, Helvetica, sans-serif;
-	background: #ebe8e8;
+    line-height: 1;
+    font-family: Arial, verdana,sans-serif;
 }
 
-header{
-	background-color: #676666;
-	padding-left: 10px;
-	height: 290px;
-}
-.container {
-	width: 800px;
-	margin: 0 auto;
-}
-nav {
-	font-style: bold;
-	font-size: 30pt;
-}
-
-.menu{
-	list-style: none;
-	padding-top: 20px;
-	display: block;
+.space {
+    height: 30px;
 
 }
-.menu li{
-	float: left;
-	padding-left: 30px;
-	padding-right: 75px;
-	display: inline;
-}
-.menu li a{
-	text-decoration: none;
+ol, ul {
+    list-style: inline;
 }
 
-.content{
-	width: 510px;
-	float:left;
+h3 {
+    font-size: 110%;
 }
-.content h2 {
-	padding-top: 30px;
-	color: red;
-	font-size: 36px;
+
+html {
+    background-color: #eaeaea;
 }
-.News{
-	margin-top: 15px;
+
+.main {
+    margin: 0 auto;
+    width: 900px;
 }
-.News {
-	padding-bottom: 15px;
-	margin-bottom: 15px;
-	
+
+.logo h1 a{
+    position: absolute;
+    font-size: 40px;
+    font-type: bold;
+    text-decoration: none;
+    color: gray;
+    text-shadow: 3px 3px 1px #A8A8A8;
 }
-.News h3 {
-	padding-bottom: 20px;
-	color: red;
+
+.logo h2 a {
+    position: absolute;
+    top: 60px;
+    font-size: 40px;
+    font-type: bold;
+    text-decoration: none;
+    color: gray;
+    text-shadow: 3px 3px 1px #A8A8A8;
 }
-aside {
-	float: left;
-	margin-left: 55px;
-	margin-top: 65px;
-	background: #d4d6d3;
-	border:1px solid;
-	padding:0px 15px 15px 15px;
-	/*background-color: #eee;
-	border-color: #f3f3f3 #bbb #bbb #f3f3f3;*/
+
+.main-nav {
+    display: block;
+    float: left;
+    position: relative;
+    left: 500px;
+
 }
-aside ul {
-	list-style: none;
+
+.main-nav h2 {
+    font-size: 20px;
+    font-style: bold;
+    border-bottom: 1px solid #000;
+    padding-bottom: 3px;
+   
 }
-aside h3 {
-	color:#044055;
-	font-weight: normal;
-	padding-top: 10px;
+
+.nav-links {
+    float: left;
+    display: inline-block;
 }
-aside ul li a {
-	font-size: 14px;
-	color: #393838;
+
+.nav-links li {
+    padding: 5px 5px;
+
 }
-footer{
-	float:left;
-	font-size: 15px;
-	width: 100%;
-	background-color: black;
-	color: white;
-	padding: 20px 10px;
-	margin-top: 30px;
+
+.nav-links li a {
+    text-decoration: none;
+    color: #A7A8A8;
+
 }
-button {
-	color: #393838;
-	/*position: center;*/
-	padding: 10px 10px;
-	margin:auto;
-	width:100%;
-	margin-top: 10px;
+
+.contact {
+    float: none;
+    position: relative;
+    left: 550px;
+    width: 250px
+}
+
+.contact h2 {
+    font-size: 20px;
+    font-style: bold;
+    padding-bottom: 3px;
+    color: #757575;
+  
+}
+
+.contact p {
+    color: #757575;
+    margin-left: 150px;
+
+}
+
+.contact a {
+    color: #000;
+
+}
+
+.main-wrapper {
+    height: 450px;
+    margin: 40px auto 0 auto;
+    text-align: center;
+    width: 880px;
+}
+
+.main-wrapper .box {
+    border: 5px solid #fff;
+    cursor: pointer;
+    height: 182px;
+    width: 200px;
+    float: left;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+        -webkit-box-shadow: 1px 1px 1px 1px #ccc;       
+}
+
+.main-wrapper .box img {
+    position: absolute;
+    -webkit-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    left: 0;
+}
+
+.main-wrapper .box .caption {
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    transition: all 300ms ease-out;
+    left: 0;
+}
+
+.main-wrapper .box .fade-caption {
+    opacity: 0;
+    width: 170px;
+    height: 170px;
+    text-align: left;
+    padding: 15px;
+}
+
+.main-wrapper .box:hover .fade-caption {
+    opacity: 1;
+}
+
+.line {
+    position: relative;
+    float: none;
+    height: 3px;
+    border-bottom: 1px solid #d1d3d4;
+    margin: 0 0 50px 0;
+    padding: 0;
+}
+
+.top-line {
+    border-bottom: 1px solid #d1d3d4;
+    position: relative;
+    margin: 50px 0;
+
+}
+
+.news {
+    display: block;
+    width: 188px;
+    float: left;
+}
+
+.blog {
+    width: 420px;
+    margin-right: 30px;
+    float: left;
+}
+
+.tweet {
+    width: 188px;
+    float: left;
+ 
+}
+
+.about-text {
+    position: absolute;
+    top: 200px;
+    left: 750px;
+    width: 300px;
+    padding: 40px;
+    background-color: #BCBCBF;
+}
+.footer {
+    background-color: black;
 }
